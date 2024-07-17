@@ -23,8 +23,8 @@ function Todo({ navigation }) {
           justifyContent: "space-between",
         }}
       >
-        {todosItem.map((item) => (
-          <View
+        {todosItem.map((item , i) => (
+          <View key={i}
             style={[
               {
                 justifyContent: "space-between",
